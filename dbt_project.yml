@@ -1,0 +1,38 @@
+
+name: 'dbt_cloud'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_cloud:
+    +materialized: table
+
+  vars:
+      +schema: "{{ env_var('DBT_Var_SCHEMAS', 'DBT_cloud_vars') }}"
+
+seeds: 
+  dbt_cloud:
+    +schema: seed    
+ 
+vars:
+  dep_id: 10
+
+  mange_id: null
+
+  country_id: 
+    - 'UK'
+    - 'US'

@@ -1,0 +1,4 @@
+SELECT *
+FROM {{ ref('regions') }}
+WHERE REGION_ID IS NULL
+   OR REGION_NAME IS NULL

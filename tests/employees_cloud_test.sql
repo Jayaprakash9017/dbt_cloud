@@ -1,0 +1,1 @@
+select * from {{ ref('employees_cloud') }} where salary <= 0

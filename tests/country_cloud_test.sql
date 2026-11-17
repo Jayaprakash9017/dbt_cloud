@@ -1,0 +1,1 @@
+select * from {{ ref('country_cloud') }} where country_name is null

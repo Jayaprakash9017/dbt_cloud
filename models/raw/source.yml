@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: hr1
+    database: hr
+    schema: HR
+
+    tables:
+      - name: COUNTRIES
+
+      - name: REGIONS
+
+      - name: LOCATIONS
+
+      - name: DEPARTMENTS
+
+      - name: JOBS
+
+      - name: EMPLOYEES
+
+      - name: JOB_HISTORY
+
+      - name: EMPLOYEES_inc
+
+      - name: DEPARTMENTS_inc
+
+      - name: LOCATIONS_inc
+
+      - name: EMPLOYEES_APP
+
+      - name: DEPARTMENTS_APP
+
+      - name: LOCATIONS_APP
+
+      - name: EMPLOYEES_snap
+
+      - name: DEPARTMENTS_snap
+
+      - name: LOCATIONS_snap
